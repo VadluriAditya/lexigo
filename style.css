@@ -1,0 +1,28 @@
+html, body { margin: 0; min-height: 100%; background: #0d0e12; color: #ece7e1; font-family: -apple-system, system-ui, sans-serif; }
+#app { max-width: 480px; margin: 0 auto; padding: 24px 16px 60px; text-align: center; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #5bc0a8; font-weight: 700; }
+h1 { font-size: 30px; margin: 6px 0 2px; }
+.sub { color: #9a9199; font-size: 14px; margin-bottom: 18px; }
+
+.board { display: grid; grid-template-rows: repeat(6, 1fr); gap: 6px; margin: 0 auto 18px; max-width: 320px; }
+.row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.tile { aspect-ratio: 1; border: 2px solid #2a2831; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+        font-size: 24px; font-weight: 700; text-transform: uppercase; background: #16151b; }
+.tile.correct { background: #5bc0a8; border-color: #5bc0a8; color: #0d0e12; }
+.tile.present { background: #d8b34a; border-color: #d8b34a; color: #0d0e12; }
+.tile.absent { background: #2a2831; border-color: #2a2831; color: #6b6670; }
+.tile.filled { border-color: #4a4652; }
+
+.keyboard { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.krow { display: flex; gap: 5px; justify-content: center; }
+.key { min-width: 30px; flex: 1; max-width: 40px; padding: 12px 0; border-radius: 6px; background: #2a2831; color: #ece7e1;
+       border: none; font-weight: 700; font-size: 13px; cursor: pointer; }
+.key.wide { max-width: 60px; flex: 1.5; font-size: 11px; }
+.key.correct { background: #5bc0a8; color: #0d0e12; }
+.key.present { background: #d8b34a; color: #0d0e12; }
+.key.absent { background: #1a1920; color: #6b6670; }
+
+.message { min-height: 24px; font-weight: 700; color: #d8b34a; margin-bottom: 8px; }
+.card { background: #16151b; border: 1px solid #2a2831; border-radius: 14px; padding: 20px; margin-top: 16px; }
+.btn { background: #5bc0a8; color: #0d0e12; border: none; border-radius: 10px; padding: 12px 24px; font-weight: 700; font-size: 15px; cursor: pointer; margin-top: 12px; }
+.streak { font-size: 14px; color: #9a9199; margin-top: 8px; }
